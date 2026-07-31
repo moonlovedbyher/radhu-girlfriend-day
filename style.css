@@ -1,0 +1,43 @@
+*{box-sizing:border-box}
+:root{--ink:#fdf4f7;--muted:#d7c5cc;--pink:#ff9fc3;--deep:#ff6fa7;--glass:rgba(8,18,38,.72);--line:rgba(255,178,208,.3)}
+html{scroll-behavior:smooth}
+body{margin:0;background:#07152c;color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:url("starry-love-art.png") center top/cover fixed;z-index:-3}
+body:after{content:"";position:fixed;inset:0;background:rgba(2,9,24,.55);z-index:-2}
+.overlay{position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 20%,transparent 0,rgba(0,0,0,.3) 75%);z-index:-1}
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:28px}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.7rem;color:var(--pink);font-weight:700}
+h1,h2{font-family:"Playfair Display",serif}
+h1{font-size:clamp(4rem,17vw,8rem);line-height:.9;margin:20px 0;color:white;text-shadow:0 0 28px rgba(255,127,177,.5)}
+h1 i{color:var(--pink)}
+.hero p{color:#eadde2;line-height:1.7}
+button{border:0;border-radius:999px;background:linear-gradient(135deg,#ff8bb7,#e85d9b);color:#fff;padding:15px 25px;font:700 1rem "DM Sans";box-shadow:0 10px 35px rgba(255,80,150,.3);cursor:pointer}
+.hero small{margin-top:12px;color:#bcaab2;font-size:.7rem}
+.hidden{display:none}
+main{max-width:850px;margin:auto;padding:0 15px 70px}
+.card,.reasons>div{background:var(--glass);border:1px solid var(--line);backdrop-filter:blur(10px);box-shadow:0 20px 70px rgba(0,0,0,.25);border-radius:28px}
+.card{padding:30px;margin:28px 0}
+h2{font-size:clamp(2rem,8vw,3.2rem);margin:10px 0 20px}
+.letter p,.memory p,.ending p{line-height:1.85;color:#eadde2}
+.highlight{color:#ffd1df!important;text-align:center;font-size:1.08rem}
+.sign{color:var(--pink);font-family:"Playfair Display";font-style:italic;text-align:center;margin-top:25px}
+.art img{width:100%;display:block;border-radius:20px;margin-top:18px}
+.section-heading{text-align:center;margin:65px 0 25px;color:var(--pink)}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.reasons>div{padding:20px;display:flex;flex-direction:column;gap:6px}
+.reasons b{font-size:.7rem;color:var(--pink)}
+.reasons strong{font-family:"Playfair Display";font-size:1.3rem}
+.reasons span{font-size:.85rem;color:var(--muted);line-height:1.5}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:28px 0}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:22px;border:1px solid var(--line);background:#111}
+.memory{text-align:center}
+.timeline{border-left:2px solid var(--pink);text-align:left;padding-left:20px;margin:25px 0}
+.timeline div{padding:11px 0;display:flex;flex-direction:column;gap:4px}
+.timeline small{color:var(--pink);text-transform:uppercase;letter-spacing:.12em}
+.timeline b{font-family:"Playfair Display";font-size:1.15rem}
+.music{text-align:center}
+.music p{color:var(--muted)}
+.music small{display:block;color:#a99aa1;font-size:.7rem;margin-top:15px}
+.ending{text-align:center;padding:35px 25px}
+.ending .big{font-family:"Playfair Display";font-size:1.45rem;color:var(--pink)}
+@media(max-width:520px){.reasons,.gallery{grid-template-columns:1fr}.card{padding:24px 20px}}
